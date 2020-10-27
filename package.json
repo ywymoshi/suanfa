@@ -1,0 +1,22 @@
+{
+  "name": "suanfa",
+  "version": "1.0.0",
+  "description": "\"# suanfa\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ywymoshi/suanfa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ywymoshi/suanfa/issues"
+  },
+  "homepage": "https://github.com/ywymoshi/suanfa#readme",
+  "dependencies": {
+    "jest": "^26.6.1"
+  }
+}
