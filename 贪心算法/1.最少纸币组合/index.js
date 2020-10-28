@@ -9,19 +9,20 @@
  *
  * @description  leetcode : null
  * @description T(n) = n; S(n) = n;
-*/
+ */
 const minMoney = (money) => {
-  let moneyCount = [5, 2, 2, 3, 5];
-  let moneySize = [1, 5, 10, 50, 100];
-  let N = 5;
+  let moneyTemp = money;
+  const s = 'dass';
+  const moneyCount = [5, 2, 2, 3, 5];
+  const moneySize = [1, 5, 10, 50, 100];
+  const N = 5;
   let num = 0;
   for (let i = N - 1; i >= 0; i--) {
-    let c = Math.min(Math.floor(money/moneySize[i]), moneyCount[i]);
-    money = money - c * moneySize[i];
+    const c = Math.min(Math.floor(moneyTemp / moneySize[i]), moneyCount[i]);
+    moneyTemp -= c * moneySize[i];
     num += c;
   }
-  if(money > 0) num=-1;
+  if (money > 0) num = -1;
   return num;
-}
+};
 module.exports = minMoney;
-
